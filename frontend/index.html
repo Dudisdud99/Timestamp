@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Timestamp Sistem</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Timestamp Microservice</h1>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unix Timestamp</th>
+                        <th>UTC Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="unix-date-current"></td>
+                        <td id="utc-date-current"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Conversor de data</h2>
+            <form id="inputDate">
+                <label for="date-input">Enter a date (YYYY-MM-DD):</label>
+                <input type="text" id="date-input" placeholder="2023-10-01" required>
+                <select id="timezone-input">
+                    <option value="0" disabled selected>Fuso-Horário</option>
+                    <option value="12">12</option>
+                    <option value="11">11</option>
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                    <option value="-1">-1</option>
+                    <option value="-2">-2</option>
+                    <option value="-3">-3</option>
+                    <option value="-4">-4</option>
+                    <option value="-5">-5</option>
+                    <option value="-6">-6</option>
+                    <option value="-7">-7</option>
+                    <option value="-8">-8</option>
+                    <option value="-9">-9</option>
+                    <option value="-10">-10</option>
+                    <option value="-11">-11</option>
+                    <option value="-12">-12</option>
+                </select>
+                <button type="submit" id="submit">Get Timestamp</button>
+            </form>
+            <div id="result-1"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unix Timestamp</th>
+                        <th>UTC Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="unix-date-process"></td>
+                        <td id="utc-date-process"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Diferença entre datas</h2>
+            <form id="diffDate">
+                <label for="date-input">Enter a date (YYYY-MM-DD):</label>
+                <input type="text" id="date-input-1" placeholder="2023-10-01" required>
+                
+                <label for="date-input">Enter a date (YYYY-MM-DD):</label>
+                <input type="text" id="date-input-2" placeholder="2023-10-01" required>
+    
+                <button type="submit">Calcular</button>
+            </form>
+    
+            <div id="result" class="hidden">
+                <h2>Resultado</h2>
+                <table>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td id="resultDate-1"></td>
+                    </tr>
+                    <tr>
+                        <td>Data 2</td>
+                        <td id="resultDate-2"></td>
+                    </tr>
+                    <tr>
+                        <td>Diferença em Dias</td>
+                        <td id="diffDays"></td>
+                    </tr>
+                    <tr>
+                        <td>Diferença em Horas</td>
+                        <td id="diffHours"></td>
+                    </tr>
+                    <tr>
+                        <td>Diferença em Minutos</td>
+                        <td id="diffMin"></td>
+                    </tr>
+                    <tr>
+                        <td>Diferença em Segundos</td>
+                        <td id="diffSec"></td>
+                    </tr>
+                    <tr>
+                        <td>Diferença em Milissegundos</td>
+                        <td id="diffMs"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

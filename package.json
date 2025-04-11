@@ -1,0 +1,21 @@
+{
+  "name": "api-timestamp",
+  "version": "0.0.1",
+  "description": "api de corversão de data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch backend/server.js"
+  },
+  "keywords": [
+    "timestamp",
+    "conversão",
+    "data"
+  ],
+  "author": "Eduardo de Oliveira Flesch",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^4.21.2"
+  }
+}

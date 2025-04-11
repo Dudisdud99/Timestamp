@@ -1,0 +1,44 @@
+# TIMESTAMP
+
+## Introdução
+
+Este projeto é um timestamp desenvolvido por **Eduardo de Oliveira Flesch**.
+
+## Objetivo
+
+O projeto tem como objetivo:
+- Obter a data e horário atual no fuso horário GMT 0.
+- Transformar qualquer data e horário, de qualquer GMT, para o GMT 0 ou outro fuso horário de sua escolha.
+- Calcular a diferença entre duas datas quaisquer, retornando a diferença em milissegundos, segundos, minutos, horas e dias.
+
+## Tecnologias Utilizadas
+
+Este projeto utiliza:
+- **Node.js**: Plataforma de execução para JavaScript no lado do servidor.
+- **Express.js**: Framework para criação de APIs e servidores HTTP.
+
+## Funcionamento
+
+### Obter data e horário atual em GMT 0
+- **Método:** `GET`
+- **URL:** `/`
+- **Descrição:** Retorna a data e horário atual no fuso horário GMT 0.
+
+### Converter data e horário para GMT 0 ou outro fuso horário
+- **Método:** `POST`
+- **URL:** `/:date`
+- **Descrição:** Recebe uma data e horário em um fuso horário específico e converte para GMT 0 ou outro fuso horário de sua escolha.
+
+### Calcular a diferença entre duas datas
+- **Método:** `POST`
+- **URL:** `/diff/:date1/:date2`
+- **Descrição:** Recebe duas datas, as transforma para o formato UNIX e calcula a diferença entre elas, retornando o resultado em milissegundos, segundos, minutos, horas e dias.
+
+## Inicialização
+
+Para executar o projeto, siga os seguintes passos:
+1. entre no link do github "https://github.com/Dudisdud99/Timestamp"
+2. clique em "code" e depois "dowload zip"
+3. extraia a pasta .zip e depois abra ela no vscode
+4. execute no terminal o comando "npm i"
+5. execute no terminal o comando "npm run start"
